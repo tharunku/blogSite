@@ -13,6 +13,7 @@ const Navbar =() => {
                     <Typography variant="title" color="inherit">
                         React & Material-UI Sample Application
                         <Button>Click Me</Button>
+                        <Button>button 2</Button>
 
                     </Typography>
                 </Toolbar>
