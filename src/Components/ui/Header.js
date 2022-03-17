@@ -10,6 +10,9 @@ const useStyles = makeStyles(theme => ({
         widhth:"20em",
         height:"5em",
     },
+    title:{
+        paddingLeft:"10px"
+    },
     tabContainer:{
         marginLeft:"auto"
     },
@@ -41,7 +44,7 @@ export default function Header(props){
         <AppBar >
             <Toolbar disableGutters>
                 <img alt="logo" className={classes.logo} src={ytlogo2} />
-                <h2> Tasty Yummiest </h2>
+                <h2 className={classes.title}> Tasty Yummiest </h2>
                 <Tabs value={value} onChange={handleCHange} className={classes.tabContainer}>
                     <Tab className={classes.tab} component={Link} to="/home"  label="Home" />
                     <Tab className={classes.tab} component={Link} to="/about" label="About Us" />
